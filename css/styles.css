@@ -1,0 +1,252 @@
+:root {
+--main-cl: #2E2F42;
+--slate-cl: #434455;
+--iris-cl: #4D5AE5;
+--ocean-cl: #404BBF;
+--cloud-cl: #F4F4FD;
+--white-cl: #FFF;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+background-color: var(--white-cl);
+color: var(--slate-cl);
+}
+
+.link {
+text-decoration: none;
+}
+
+.list {
+list-style-type: none;
+}
+
+/*!-----------------------HEADER-----------------------*/
+
+.header-logo {
+font-family: Raleway, sans-serif;
+color: var(--iris-cl);
+font-size: 18px;
+font-weight: 800;
+line-height: 1.16;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+line-height: 1.17;
+}
+
+.header-logo-color {
+color: var(--main-cl);
+}
+
+.header-menu-link {
+font-size: 16px;
+font-weight: 500;
+line-height: 1.50;
+letter-spacing: 0.02em;
+color: var(--main-cl);
+}
+
+.header-menu-link:hover, .header-menu-link:focus {
+color: var(--ocean-cl);
+}
+
+.header-address-contact {
+font-style: normal;
+}
+
+.header-address-link {
+font-size: 16px;
+line-height: 1.50;
+letter-spacing: 0.02em;
+color: var(--slate-cl);
+}
+
+.header-address-link:hover, .header-address-link:focus {
+color: var(--ocean-cl);
+}
+
+/**-----------------------HERO-----------------------*/
+
+.hero {
+background-color: var(--main-cl);
+}
+
+.hero-title {
+font-size: 56px;
+line-height: 1.07;
+letter-spacing: 0.02em;
+text-align: center;
+color: var(--white-cl);
+}
+
+.hero-btn {
+font-family: Roboto, sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.50;
+letter-spacing: 0.04em;
+color: var(--white-cl);
+cursor: pointer;
+background: var(--iris);
+background-color: var(--iris-cl);
+}
+
+.hero-btn:hover, .hero-btn:focus {
+    background-color: var(--ocean-cl);
+}
+
+/*?-----------------------ADVANTAGES-----------------------*/
+
+.advantages-subtitle {
+font-size: 20px;
+font-weight: 500;
+line-height: 1.20;
+letter-spacing: 0.02em;
+color: var(--main-cl);
+}
+
+.advantages-text {
+font-size: 16px;
+line-height: 1.50;
+letter-spacing: 0.02em;
+color: var(--slate-cl);
+}
+
+/**-----------------------DESCRIPTION-----------------------*/
+
+.description-subtitle {
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+text-align: center;
+color: var(--main-cl);
+}
+
+/*!-----------------------TEAM-----------------------*/
+
+.team {
+    background-color: var(--cloud-cl);
+}
+
+.team-list {
+    background-color: var(--white-cl);
+}
+
+.team-item {
+    background-color: var(--white-cl);
+}
+
+.team-title {
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+text-align: center;
+color: var(--main-cl);
+}
+
+.team-subtitle {
+font-size: 20px;
+font-weight: 500;
+line-height: 1.20;
+letter-spacing: 0.02em;
+text-align: center;
+color: var(--main-cl);
+}
+
+.team-text {
+font-size: 16px;
+line-height: 1.50;
+letter-spacing: 0.02em;
+text-align: center;
+color: var(--slate-cl);
+}
+
+/*?-----------------------FOOTER-----------------------*/
+
+.footer-item {
+    background-color: var(--main-cl);
+}
+
+.logo-link {
+font-family: Raleway, sans-serif;
+color: var(--iris-cl);
+font-size: 18px;
+font-weight: 800;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+text-decoration: none;
+}
+
+.footer-logo {
+font-family: Raleway, sans-serif;
+color: var(--cloud-cl);
+font-size: 18px;
+font-weight: 800;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+text-decoration: none;
+}
+
+.footer-text {
+font-family: Roboto;
+font-size: 16px;
+line-height: 1.50;
+letter-spacing: 0.02em;
+color: var(--cloud-cl);
+}
+
+/**-----------------------PORTFOLIO-CATEGORY-----------------------*/
+
+.portfolio-bg {
+color: var(--slate-cl);
+}
+
+.portfolio-category-list {
+list-style: none;
+}
+
+.portfolio-category-btn {
+font-family: Roboto, sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.50;
+letter-spacing: 0.04em;
+color: var(--iris-cl);
+cursor: pointer;
+background-color: var(--cloud-cl);
+}
+
+.portfolio-category-btn:hover, .portfolio-category-btn:focus {
+color: var(--white-cl);
+background-color: var(--ocean-cl);
+}
+
+/*?-----------------------TABS-----------------------*/
+
+.tabs-list {
+list-style: none;
+}
+
+.tabs-link {
+text-decoration: none;
+}
+
+
+.tabs-title {
+font-size: 20px;
+font-weight: 500;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--main-cl);
+}
+
+.tabs-text {
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.32px;
+color: var(--slate-cl);
+}
