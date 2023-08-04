@@ -197,11 +197,9 @@ background-color: var(--ocean-cl);
 .advantages {
 padding-top: 120px;
 padding-bottom: 120px;
-}
-
-.advantages-title{
 margin-bottom: 8px;
 }
+
 
 .advantages-list {
 display: flex;
@@ -274,7 +272,7 @@ display: flex;
 gap: 24px;
 }
 
-.team-list .team-item:first-child .team-img {
+.team-list .team-item:first-child {
 border-radius: 0px 0px 4px 4px;
 }
 
