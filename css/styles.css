@@ -4,9 +4,10 @@
 --iris-cl: #4D5AE5;
 --ocean-cl: #404BBF;
 --cloud-cl: #F4F4FD;
+----cornflower: #E7E9FC;
 --white-cl: #FFF;
 }
-
+/*reset start*/
 body {
 font-family: 'Roboto', sans-serif;
 background-color: var(--white-cl);
@@ -21,7 +22,51 @@ text-decoration: none;
 list-style-type: none;
 }
 
+p, h1,h2,h3,h4,h5,h6 {
+margin-top: 0;
+margin-bottom: 0;
+}
+
+ul, ol {
+padding-left: 0;
+margin-top: 0;
+margin-bottom: 0;
+}
+/*reset end*/
+
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
+.container {
+width: 100%;
+max-width: 1158px;
+padding-left: 15px;
+padding-right: 15px;
+margin: 0 auto;
+}
+
 /*!-----------------------HEADER-----------------------*/
+
+.header {
+padding-top: 24px;
+padding-bottom: 24px;
+}
+
+.header-container {
+display: flex;
+align-items: center;
+}
 
 .header-logo {
 font-family: Raleway, sans-serif;
@@ -32,10 +77,22 @@ line-height: 1.16;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 line-height: 1.17;
+padding: 24px 0;
 }
 
 .header-logo-color {
 color: var(--main-cl);
+}
+
+.header-navigation {
+display: flex;
+align-items: center;
+gap: 76px;
+}
+
+.header-menu-list {
+display: flex;
+gap: 40px;
 }
 
 .header-menu-link {
@@ -49,6 +106,16 @@ color: var(--main-cl);
 .header-menu-link:hover, .header-menu-link:focus {
 color: var(--ocean-cl);
 }
+
+.header-address-contact {
+margin-left: auto;
+}
+
+.header-address-list {
+display: flex;
+gap: 40px;
+}
+
 
 .header-address-contact {
 font-style: normal;
@@ -69,6 +136,9 @@ color: var(--ocean-cl);
 
 .hero {
 background-color: var(--main-cl);
+padding-top: 188px;
+padding-bottom: 188px;
+margin: 0 auto;
 }
 
 .hero-title {
@@ -77,6 +147,13 @@ line-height: 1.07;
 letter-spacing: 0.02em;
 text-align: center;
 color: var(--white-cl);
+max-width: 496px;
+padding-left: auto;
+padding-right: auto;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 48px;
+height: 120px;
 }
 
 .hero-btn {
@@ -89,13 +166,36 @@ color: var(--white-cl);
 cursor: pointer;
 background: var(--iris);
 background-color: var(--iris-cl);
+display: block;
+padding: 16px 32px;
+align-items: flex-start;
+gap: 10px;
+border-radius: 4px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+border: none;
+margin: 0 auto;
 }
 
 .hero-btn:hover, .hero-btn:focus {
-    background-color: var(--ocean-cl);
+background-color: var(--ocean-cl);
 }
 
 /*?-----------------------ADVANTAGES-----------------------*/
+
+.advantages {
+padding-top: 120px;
+padding-bottom: 120px;
+}
+
+.advantages-list {
+display: flex;
+gap: 24px;
+margin: 0;
+}
+
+.advantages-item {
+width: calc((100% - 2 * 24px) /4);
+}
 
 .advantages-subtitle {
 font-size: 20px;
@@ -103,6 +203,7 @@ font-weight: 500;
 line-height: 1.20;
 letter-spacing: 0.02em;
 color: var(--main-cl);
+margin-bottom: 18px;
 }
 
 .advantages-text {
@@ -121,21 +222,55 @@ letter-spacing: 0.02em;
 text-transform: capitalize;
 text-align: center;
 color: var(--main-cl);
+padding-bottom: 72px;
 }
+
+.description-list {
+display: flex;
+padding-bottom: 120px;
+gap: 24px;
+}
+
+.description-item {
+width: calc((100% - 48px) /3);
+}
+
 
 /*!-----------------------TEAM-----------------------*/
 
 .team {
-    background-color: var(--cloud-cl);
+background-color: var(--cloud-cl);
+padding-bottom: 120px;
 }
 
+
 .team-list {
-    background-color: var(--white-cl);
+display: flex;
+gap: 24px;
+}
+
+.team-img {
+display: inline-flex;
+padding-bottom: 0px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 32px;
+border-radius: 0px 0px 4px 4px;
+background: var(--white, #FFF);
+box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-item {
-    background-color: var(--white-cl);
+width: calc((100% - 72px) /4);
+background-color: var(--white-cl);
+display: inline-flex;
+padding-bottom: 0px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
+
 
 .team-title {
 font-size: 36px;
@@ -144,6 +279,8 @@ letter-spacing: 0.02em;
 text-transform: capitalize;
 text-align: center;
 color: var(--main-cl);
+padding-top: 120px;
+padding-bottom: 72px;
 }
 
 .team-subtitle {
@@ -153,6 +290,8 @@ line-height: 1.20;
 letter-spacing: 0.02em;
 text-align: center;
 color: var(--main-cl);
+padding-top: 32px;
+padding-bottom: 8px;
 }
 
 .team-text {
@@ -161,12 +300,15 @@ line-height: 1.50;
 letter-spacing: 0.02em;
 text-align: center;
 color: var(--slate-cl);
+padding-bottom: 32px;
 }
 
 /*?-----------------------FOOTER-----------------------*/
 
 .footer-item {
-    background-color: var(--main-cl);
+background-color: var(--main-cl);
+padding-top: 102px;
+padding-bottom: 100px;
 }
 
 .logo-link {
@@ -178,6 +320,10 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 text-decoration: none;
+display: inline-flex;
+height: 24px;
+align-items: center;
+flex-shrink: 0;
 }
 
 .footer-logo {
@@ -189,6 +335,10 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 text-decoration: none;
+display: inline-flex;
+height: 24px;
+align-items: center;
+flex-shrink: 0;
 }
 
 .footer-text {
@@ -197,6 +347,8 @@ font-size: 16px;
 line-height: 1.50;
 letter-spacing: 0.02em;
 color: var(--cloud-cl);
+padding-top: 18px;
+width: 264px;
 }
 
 /**-----------------------PORTFOLIO-CATEGORY-----------------------*/
@@ -207,6 +359,12 @@ color: var(--slate-cl);
 
 .portfolio-category-list {
 list-style: none;
+display: flex;
+padding-top: 96px;
+padding-bottom: 72px;
+gap: 24px;
+align-items: flex-start;
+justify-content: center;
 }
 
 .portfolio-category-btn {
@@ -218,6 +376,8 @@ letter-spacing: 0.04em;
 color: var(--iris-cl);
 cursor: pointer;
 background-color: var(--cloud-cl);
+padding: 12px 24px 12px 24px;
+border: none;
 }
 
 .portfolio-category-btn:hover, .portfolio-category-btn:focus {
@@ -229,6 +389,16 @@ background-color: var(--ocean-cl);
 
 .tabs-list {
 list-style: none;
+display: flex;
+flex-wrap: wrap;
+gap: 48px 24px;
+margin-bottom: 120px;
+}
+
+.tabs-item {
+width: calc((100% - 48px) /3);
+background-color: var(--white, #FFF);
+border: 1px solid var(--cornflower, #E7E9FC);
 }
 
 .tabs-link {
@@ -242,6 +412,8 @@ font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--main-cl);
+padding-top: 32px;
+padding-left: 16px;
 }
 
 .tabs-text {
@@ -249,4 +421,8 @@ font-size: 16px;
 line-height: 24px;
 letter-spacing: 0.32px;
 color: var(--slate-cl);
+padding-top: 8px;
+padding-left: 16px;
+padding-bottom: 32px;
 }
+
